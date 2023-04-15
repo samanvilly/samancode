@@ -3,7 +3,7 @@ namespace ConsoleApplication3
 {
     class Program
     {
-        static int BMM(int a, int b)
+        private static int BMM(int a, int b)
         {
             if (b == 0)
             {
@@ -14,7 +14,7 @@ namespace ConsoleApplication3
                 return BMM(b, a % b);
             }    
         }
-        static int KMM(int a, int b)
+        private static int KMM(int a, int b)
         {
             return (a / BMM(a, b)) * b;
 
