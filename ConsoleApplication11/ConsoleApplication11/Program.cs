@@ -52,8 +52,25 @@ namespace ConsoleApplication11
             int num2 = Convert.ToInt32(Console.ReadLine());
             int num3 = Convert.ToInt32(Console.ReadLine());
             int num4 = Convert.ToInt32(Console.ReadLine());
+
+            int num5 = Convert.ToInt32(Console.ReadLine());
+            int num6 = Convert.ToInt32(Console.ReadLine());
+            int num7 = Convert.ToInt32(Console.ReadLine());
+            int num8 = Convert.ToInt32(Console.ReadLine());
+
             MyDist temp = new MyDist(num1, num2, num3, num4);
+            MyDist temp1 = new MyDist(num5, num6, num7, num8);
             double res = temp.calc();
+            double res1 = temp1.calc();
+            if (res > res1)
+            {
+                Console.WriteLine("bozorgatr");
+
+            }
+            else
+            {
+                Console.WriteLine("koochiktar");
+            }
             Console.WriteLine(res);
             Console.ReadLine();
         }
